@@ -1,0 +1,25 @@
+topics:
+  can_raw: "/can_raw"
+  cloud_in: "/points_raw"
+  camera_in: "/camera0/image_raw"
+  
+  #bag_in: "/home/redwan/ELECOM/20160319_123014_133014/*.bag"
+  #bag_in: "/home/redwan/ELECOM/20160319_134804_144304/*.bag"
+  bag_in: "/home/redwan/ELECOM/20160319_163019_172519/*.bag"
+  
+  #num_thread: 7
+can_bus:
+  max_value: [375,  79, 127,  0,  7774, 0,  0,  239,  14542,  14557,  14532,  14550,  65, 25200,  255,  619]
+  min_value: [-385, 0,  -128, 0,  0,  0,  0,  0,  6767, 6767, 6767, 6767, -99,  0,  0,  0]
+  update: false
+
+  #max_value: [28, 79, 127,  0,  7774, 0,  0,  126,  14542,  14557,  14532,  14550,  45, 25145,  255,  539]
+  #min_value: [-23,  8,  -128, 0,  0,  0,  0,  0,  6767, 6767, 6767, 6767, -57,  0,  0,  0]
+  
+output:
+  can_file: "/home/redwan/Videos/dataset/can_video.avi"
+  cloud_file: "/home/redwan/Videos/dataset/depth_video.avi"
+  camera_file: "/home/redwan/Videos/dataset/camera_video.avi"
+  visualize: true
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="nodename" default="ELECOM_20160319_163019_172519"/> 
+  <node name="$(arg nodename)" pkg="rosbag_decoder" type="rosbag_decoder_node" output="screen" args="$(arg nodename)">
+  	<rosparam command="load" file="param.yaml" />
+  </node>
+</launch>
+
