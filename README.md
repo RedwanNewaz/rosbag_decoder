@@ -1,6 +1,6 @@
 # rosbag_decoder
 For autonomous vehicles it is essential to have a clear view and understanding of their surroundings to be able to navigate safely. To generate this view, out of many different sensors we are interested to use Lidar sensor since it's performance is mostly invariant to all weather and lighting conditions. On the other hand, we rely on control area network (CAN) bus that capture the driving behavior of an agent using multi-modal sensor outputs. To be able to learn the driving behavior of an agent it is necessary to synchronize the data delivered by these sensors so that we can process them for the [proposed neural networks](https://github.com/RedwanNewaz/drive_learner).
-## variable frequency
+## Sensor modality
 Each sensor has its own frequency for detection and extraction of scene information. CAN sensors are faster in response but noisy while Lidar is accurate but slower, both of which have their pros and cons. The synchronization of data should ensure a higher certainty about the existence of perception and actions. 
 ![](https://github.com/RedwanNewaz/rosbag_decoder/blob/master/include/canvas.png)
 ## Requirement
