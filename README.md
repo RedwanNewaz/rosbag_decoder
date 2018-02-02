@@ -1,7 +1,7 @@
 # rosbag_decoder
 
 ## Requirement
-* rosbag file 
+* rosbag  
 * cv_bridge
 * pcl_ros
 * opencv
